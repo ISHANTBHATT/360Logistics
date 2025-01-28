@@ -32,9 +32,9 @@ function NavbarDemo({ className }) {
       <Menu setActive={setActive} className="bg-neutral-800 ">
         <Image
           src="/images/logo2.png"
-          width={100}
+          width={500}
           height={100}
-          className="w-20 h-20"
+          className="w-24 h-24"
         />
         <MenuItem setActive={setActive} active={null} item="Home"></MenuItem>
         <MenuItem setActive={setActive} active={null} item="About Us">

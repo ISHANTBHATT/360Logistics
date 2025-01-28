@@ -82,14 +82,22 @@
 
 // export default Experience;
 
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const StatCard = ({ number, text }) => (
-  <div className="bg-white rounded-[20px] shadow-lg p-6 min-w-[150px] text-center transform hover:scale-105 transition-transform duration-300">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.5 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className="bg-white rounded-[20px] shadow-lg p-6 min-w-[150px] text-center transform hover:!scale-105 transition-transform duration-300"
+  >
     <div className="text-[#5db5e9] font-bold text-3xl">{number}</div>
     <div className="text-gray-600 text-sm mt-2">{text}</div>
-  </div>
+  </motion.div>
 );
 
 function Experience() {
@@ -112,16 +120,34 @@ function Experience() {
             <span className="text-red-500">NUMBERS</span>
           </h1>
         </div> */}
-        <div className="w-full bg-white pt-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="w-full bg-white pt-10"
+        >
           <div className="max-w-7xl mx-auto relative">
             {/* Background Text */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="absolute inset-0 flex items-center justify-center"
+            >
               <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
                 OUTSTANDING
               </span>
-            </div>
+            </motion.div>
             {/* Foreground Text */}
-            <div className="relative z-10">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 1 }}
+              className="relative z-10"
+            >
               <div className="text-center mb-16 ">
                 <h1 className="text-4xl font-bold mb-2">
                   <span className="text-gray-800">OUR</span>{" "}
@@ -129,14 +155,20 @@ function Experience() {
                   <span className="text-gray-800">NUMBERS</span>
                 </h1>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Main Content */}
         <div className="relative">
           {/* Container Image */}
-          <div className="flex justify-center pt-4 mb-8">
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1.5 }}
+            className="flex justify-center pt-4 mb-8"
+          >
             <Image
               src={`/images/export.png`}
               width={1000}
@@ -144,7 +176,7 @@ function Experience() {
               alt="Import Export Containers"
               className="w-96 h-auto object-contain"
             />
-          </div>
+          </motion.div>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">

@@ -5,23 +5,41 @@ import { motion } from "motion/react";
 function Map() {
   return (
     <>
-      <div className="w-full bg-white  px-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full pb-12 px-4 bg-white"
+      >
         <div className="max-w-7xl mx-auto relative">
           {/* Background Text */}
-          <div className="absolute inset-0 flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="absolute inset-0 flex items-center justify-center"
+          >
             <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
               REGISTER
             </span>
-          </div>
+          </motion.div>
 
           {/* Foreground Text */}
-          <div className="relative z-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="relative z-10"
+          >
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
               REGISTRATION STEPS
             </h1>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       <div className=" py-40 bg-white w-full">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-bold text-xl md:text-4xl dark:text-white text-black">

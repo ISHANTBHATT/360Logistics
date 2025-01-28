@@ -55,7 +55,7 @@ export function WorldMap({ dots = [], lineColor = "#0ea5e9" }) {
                 initial={{
                   pathLength: 0,
                 }}
-                animate={{
+                whileInView={{
                   pathLength: 1,
                 }}
                 transition={{
@@ -63,6 +63,7 @@ export function WorldMap({ dots = [], lineColor = "#0ea5e9" }) {
                   delay: 0.5 * i,
                   ease: "easeOut",
                 }}
+                viewport={{ once: true }}
                 key={`start-upper-${i}`}
               ></motion.path>
             </g>

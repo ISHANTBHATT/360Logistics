@@ -127,7 +127,7 @@ export default function Footer() {
 
           {/* CTA Section */}
           <div className="lg:col-span-1 flex flex-col items-start gap-4">
-            <Button className="bg-[#FF6B00] hover:bg-[#ff8533] text-white">
+            <Button className="bg-[#5db5e9] hover:bg-blue-500 text-white">
               Get a Quote
             </Button>
             <div>

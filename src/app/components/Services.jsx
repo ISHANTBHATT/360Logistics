@@ -555,6 +555,7 @@ import {
   Package,
 } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [activeStep, setActiveStep] = useState(null);
@@ -610,23 +611,57 @@ export default function Home() {
           borderTopRightRadius: "100% 200px",
         }}
       />
-      <div className="w-full bg-white pb-12 px-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full pb-12 px-4 bg-white"
+      >
         <div className="max-w-7xl mx-auto relative">
           {/* Background Text */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
+              REGISTER
+            </span>
+          </motion.div>
+
+          {/* Foreground Text */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="relative z-10"
+          >
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
+              REGISTRATION STEPS
+            </h1>
+          </motion.div>
+        </div>
+      </motion.div>
+      {/* <div className="w-full bg-white pb-12 px-4">
+        <div className="max-w-7xl mx-auto relative">
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
               REGISTER
             </span>
           </div>
 
-          {/* Foreground Text */}
+
           <div className="relative z-10">
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
               REGISTRATION STEPS
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="max-w-[1000px] w-full py-10">
         {/* Main Half Circle Container */}
         <div className="relative w-[800px] h-[400px] mx-auto">
