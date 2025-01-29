@@ -86,6 +86,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -185,8 +186,15 @@ export function Testimonials() {
                 style={{ transform: profile.position }}
               >
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg animate-float">
-                  <img
+                  {/* <img
                     src={profile.image || "/placeholder.svg"}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  /> */}
+                  <Image
+                    src={profile.image || "/placeholder.svg"}
+                    width={1500}
+                    height={48}
                     alt=""
                     className="w-full h-full object-cover"
                   />

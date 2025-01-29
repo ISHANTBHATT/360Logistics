@@ -139,21 +139,21 @@ export default function ServicesGrid() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
         when: "beforeChildren",
-        staggerChildren: 0.1,
+        staggerChildren: 0.4,
       },
     },
   };
 
   const horizontalLineVariants = {
     hidden: { scaleX: 0 },
-    visible: { scaleX: 1, transition: { duration: 0.5 } },
+    visible: { scaleX: 1, transition: { duration: 1 } },
   };
 
   const verticalLineVariants = {
     hidden: { scaleY: 0 },
-    visible: { scaleY: 1, transition: { duration: 0.5, delay: 0.5 } },
+    visible: { scaleY: 1, transition: { duration: 1, delay: 0.8 } },
   };
 
   const serviceVariants = {
@@ -161,7 +161,7 @@ export default function ServicesGrid() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 },
+      transition: { duration: 1 },
     },
   };
 
