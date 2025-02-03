@@ -63,27 +63,27 @@ function NavbarDemo({ className }) {
         >
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Algochurn"
+              title="GROUND FREIGHT"
               href="https://algochurn.com"
-              src="/images/DFOS.svg"
+              src="/images/1.jpg"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
-              title="Tailwind Master Kit"
+              title="AIRFREIGHT"
               href="https://tailwindmasterkit.com"
-              src="/images/DFOS.svg"
+              src="/images/3.jpg"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="Moonbeam"
+              title="OCEAN FREIGHT"
               href="https://gomoonbeam.com"
-              src="/images/DFOS.svg"
+              src="/images/2.jpg"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
-              title="Rogue"
+              title="CROSS BOARDER"
               href="https://userogue.com"
-              src="/images/DFOS.svg"
+              src="/images/1.jpg"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
