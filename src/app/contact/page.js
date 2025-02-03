@@ -130,12 +130,12 @@ export default function Page() {
           </div>
         </div>
         <div className="p-12 w-1/3 bg-white shadow-lg rounded-xl mx-auto mt-12">
-          <h2 className="text-2xl font-bold text-center">Persona Contact!</h2>
+          <h2 className="text-2xl font-bold text-center">Contact Us!</h2>
           <form className="mt-6 space-y-4">
             <div>
-              <label className="block text-gray-700">Start Location</label>
+              <label className="block text-gray-700">Name</label>
               <input
-                type="text"
+                type="name"
                 name="startLocation"
                 value={formData.startLocation}
                 onChange={handleChange}
@@ -143,9 +143,9 @@ export default function Page() {
               />
             </div>
             <div>
-              <label className="block text-gray-700">Time</label>
+              <label className="block text-gray-700">Email</label>
               <input
-                type="time"
+                type="mail"
                 name="time"
                 value={formData.time}
                 onChange={handleChange}
@@ -176,7 +176,7 @@ export default function Page() {
               type="submit"
               className="w-full bg-black text-white py-2 rounded-lg"
             >
-              Add Input
+              Submit
             </button>
           </form>
         </div>

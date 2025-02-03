@@ -36,8 +36,18 @@ function NavbarDemo({ className }) {
           height={100}
           className="w-24 h-24"
         />
-        <MenuItem setActive={setActive} active={null} item="Home"></MenuItem>
-        <MenuItem setActive={setActive} active={null} item="About Us">
+        <MenuItem
+          setActive={setActive}
+          active={null}
+          item="Home"
+          href="/"
+        ></MenuItem>
+        <MenuItem
+          setActive={setActive}
+          active={null}
+          item="About Us"
+          href="/about"
+        >
           {/* <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
             <HoveredLink href="/interface-design">Interface Design</HoveredLink>
@@ -45,7 +55,12 @@ function NavbarDemo({ className }) {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div> */}
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Services"
+          href="/services"
+        >
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Algochurn"
@@ -73,7 +88,12 @@ function NavbarDemo({ className }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Contact"
+          href="/contact"
+        >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>

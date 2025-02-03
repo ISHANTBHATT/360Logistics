@@ -13,18 +13,20 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({ setActive, active, item, children }) => {
+export const MenuItem = ({ setActive, active, item, href, children }) => {
   return (
     <div
       onMouseEnter={() => setActive(item)}
       className="relative flex flex-col justify-center py-6"
     >
-      <motion.p
-        transition={{ duration: 0.3 }}
-        className="cursor-pointer hover:opacity-[0.9] text-white"
-      >
-        {item}
-      </motion.p>
+      <Link href={href || "#"} passHref>
+        <motion.p
+          transition={{ duration: 0.3 }}
+          className="cursor-pointer hover:opacity-[0.9] text-white"
+        >
+          {item}
+        </motion.p>
+      </Link>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
