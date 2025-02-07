@@ -90,16 +90,16 @@ function NavbarDemo({ className }) {
         </MenuItem>
         <MenuItem
           setActive={setActive}
-          active={active}
+          active={null}
           item="Contact"
           href="/contact"
         >
-          <div className="flex flex-col space-y-4 text-sm">
+          {/* <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
+          </div> */}
         </MenuItem>
       </Menu>
     </div>
