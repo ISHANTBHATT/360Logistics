@@ -23,12 +23,20 @@ export default function Footer() {
                 THREE SIXTY LOGISTICS PVT LTD
               </span>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-4">
               <h3 className="text-white mb-2">Connected</h3>
-              <p>360Logistics@example.com</p>
-              <p>(248) 666-4624</p>
-              <p>1242 California USA,</p>
-              <p>Manchester, Kentucky 561238</p>
+              <div>
+                <p>Himanshi.tomar@360logistics.net</p>
+                <p>Sanjeev.pant@360logistics.net</p>
+              </div>
+              <p>+91 82859 84666, +91 98118 20939</p>
+              <div>
+                <p>Khasra No. 1027/1, 2nd Floor Plot No. 29,</p>
+                <p>
+                  Near Om Palace Hotel Road No. 6, Mahipalpur Extn. National
+                  Highway-8 New Delhi-110037, India,
+                </p>
+              </div>
             </div>
           </div>
 
