@@ -25,7 +25,7 @@ const companies = [
   {
     id: 3,
     name: "Express Freight",
-    logo: "/images/Pace-Express.png",
+    logo: "/images/Predentiosl.jpg",
     color: "bg-blue-500",
     title: "Exhibition Door To Door",
     description: "",
@@ -33,7 +33,7 @@ const companies = [
   {
     id: 4,
     name: "Neutral Freight",
-    logo: "/images/Predentiosl.jpg",
+    logo: "/images/Pace-Express.png",
     color: "bg-blue-500",
     title: "Neutral Freight Solution",
     description: "",
@@ -57,9 +57,9 @@ function CompanyLogosCircle() {
   };
 
   return (
-    <div className="relative w-full max-w-4xl aspect-square flex items-center justify-center my-20">
+    <div className="relative w-full max-w-4xl aspect-square flex items-center justify-center mb-10">
       {/* Circle background */}
-      <div className="absolute w-[80%] h-[80%] rounded-full bg-gray-100 border-4 border-gray-200"></div>
+      <div className="absolute w-[70%] h-[70%] rounded-full bg-gray-100 border-4 border-gray-200"></div>
 
       {/* Center logo */}
       <div className="absolute z-10 w-1/3 h-1/3 rounded-full bg-white flex items-center justify-center shadow-md">
@@ -75,7 +75,7 @@ function CompanyLogosCircle() {
 
       {/* Company logos */}
       {companies.map((company, index) => {
-        const position = getPosition(index, companies.length, 40);
+        const position = getPosition(index, companies.length, 35);
         const percentX = 50 + position.x;
         const percentY = 50 + position.y;
 
@@ -194,7 +194,7 @@ export default function GroupCompanies() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
-              GROUP COMPANIES
+              COMPANIES
             </span>
           </motion.div>
 
@@ -207,7 +207,7 @@ export default function GroupCompanies() {
             className="relative z-10"
           >
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
-              COMPANIES
+              GROUP COMPANIES
             </h1>
           </motion.div>
         </div>

@@ -291,37 +291,57 @@ import { TramFront, PlaneTakeoff, Ship } from "lucide-react";
 function Page() {
   const services = [
     {
-      title: "GROUND FREIGHT",
+      title: "Freight Forwarding (AIR & OCEAN )",
+      image: "/images/4.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: TramFront,
     },
     {
-      title: "AIRFREIGHT",
+      title: "Supply Chain Management",
+      image: "/images/5.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: PlaneTakeoff,
     },
     {
-      title: "OCEAN FREIGHT",
+      title: "E-Commerce Logistics (Cross Boarder )",
+      image: "/images/6.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: Ship,
     },
     {
-      title: "MULTI MODAL",
+      title: "3PL (Third-Party Logistics) Services",
+      image: "/images/7.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: TramFront,
     },
     {
-      title: "CUSTOM BROKERAGE",
+      title: "Project Cargo Logistics",
+      image: "/images/8.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: TramFront,
     },
     {
-      title: "CROSS BOARDER",
+      title: "Temperature-Controlled Logistics",
+      image: "/images/9.png",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      icon: TramFront,
+    },
+    {
+      title: "Specialized Services",
+      image: "/images/10.png",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      icon: TramFront,
+    },
+    {
+      title: "Domestic Logistics Service Offerings",
+      image: "/images/11.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
       icon: TramFront,
@@ -409,10 +429,10 @@ function Page() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="text-[#5db5e9] hover:text-[#4293C4] cursor-pointer flex border-r-2 border-gray-200 px-4 justify-center items-center gap-2"
+                className="text-[#5db5e9] hover:text-[#4293C4] cursor-pointer flex border-r-2 border-gray-200 pr-4 justify-center items-center gap-2"
               >
                 <service.icon className="w-8 h-8" />
-                <h1>{service.title}</h1>
+                <h1 className="text-sm">{service.title}</h1>
               </div>
             ))}
           </div>
@@ -429,17 +449,17 @@ function Page() {
               transition={{ duration: 0.8 }}
             >
               <motion.div
-                className="w-1/2 flex justify-center"
+                className="w-1/2 flex justify-center "
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
               >
                 <Image
-                  src="/images/boxes3.png"
+                  src={service.image}
                   width={1000}
                   height={300}
                   alt="boxes"
-                  className="w-80 h-80"
+                  className="w-80 h-80 rounded-3xl"
                 />
               </motion.div>
               <motion.div

@@ -42,12 +42,12 @@ export default function Footer() {
               >
                 About us
               </Link>
-              <Link
+              {/* <Link
                 href="/faq"
                 className="block hover:text-white transition-colors"
               >
                 FAQ
-              </Link>
+              </Link> */}
               <Link
                 href="/services"
                 className="block hover:text-white transition-colors"

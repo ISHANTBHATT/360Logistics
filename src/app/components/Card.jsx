@@ -365,7 +365,7 @@ function CardCarousel() {
         "●	Ocean Freight: Cost-effective sea freight services, including FCL (Full Container Load) and LCL (Less than Container Load) options. ",
         "●	Land Freight: Flexible road and rail transport for domestic and cross-border deliveries. ",
       ],
-      image: "/images/1.jpg",
+      image: "/images/4.png",
       icon: Ship,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -376,7 +376,7 @@ function CardCarousel() {
         "●	Vendor Management: Coordinating with suppliers and stakeholders to maintain a smooth flow of goods.",
         "●	Demand Planning: Forecasting and aligning supply with market demands to prevent shortages or excess inventory.",
       ],
-      image: "/images/3.jpg",
+      image: "/images/5.png",
       icon: Plane,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -387,7 +387,7 @@ function CardCarousel() {
         "●	Returns Management: Streamlined reverse logistics for hassle-free returns and exchanges.",
         "●	Integration with Platforms: Seamless integration with e-commerce platforms like Shopify, Amazon, and WooCommerce.",
       ],
-      image: "/images/2.jpg",
+      image: "/images/6.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -398,7 +398,7 @@ function CardCarousel() {
         "●	Integrated Solutions: Customizable services tailored to specific supply chain needs.",
         "●	Cost Optimization: Reducing operational expenses through efficient logistics strategies.",
       ],
-      image: "/images/3.jpg",
+      image: "/images/7.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -408,7 +408,7 @@ function CardCarousel() {
         "●	Oversized and Heavy-Lift Cargo: Specialized handling for large, heavy, or complex shipments.",
         "●	End-to-End Execution: From site inspection to delivery, ensuring compliance and safety.",
       ],
-      image: "/images/3.jpg",
+      image: "/images/8.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -417,7 +417,7 @@ function CardCarousel() {
       description: [
         "●	Cold Chain Solutions: Transport and storage for perishable goods like food, pharmaceuticals, and chemicals.",
       ],
-      image: "/images/3.jpg",
+      image: "/images/9.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -428,7 +428,7 @@ function CardCarousel() {
         "●	Time-Critical Deliveries",
         "●	Priority solutions for urgent and high-value & jewellery shipments ",
       ],
-      image: "/images/3.jpg",
+      image: "/images/10.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -439,7 +439,7 @@ function CardCarousel() {
         "●	Road Transportation -  Full Truckload (FTL)/ Less Than Truckload (LTL ) / Express Delivery ",
         "●	Rail Freight Services – Bulk Cargo – Ideal for transporting large volumes in cost effective solution, schedule services ",
       ],
-      image: "/images/3.jpg",
+      image: "/images/11.png",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
@@ -526,20 +526,20 @@ function CardCarousel() {
               return (
                 <Card
                   key={index}
-                  className={`absolute duration-500 cursor-pointer overflow-hidden w-full max-w-2xl  ${getCardStyle(
+                  className={`absolute duration-500 cursor-pointer overflow-hidden w-full h-full max-w-2xl  ${getCardStyle(
                     index
                   )}`}
                   onClick={() => handleCardClick(index)}
                 >
                   <div className="grid grid-cols-2 h-full ">
                     {/* Image Section */}
-                    <div className="relative h-full">
+                    <div className="relative h-full ">
                       <Image
                         width={1000}
                         height={1000}
                         src={card.image || "/placeholder.svg"}
                         alt={card.title}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full "
                       />
                     </div>
 
@@ -552,7 +552,7 @@ function CardCarousel() {
                         {card.description.map((point, index) => (
                           <p
                             key={index}
-                            className="text-white/90 flex items-center text-xs"
+                            className="text-white/90 flex items-center text-sm"
                           >
                             {/* <span className="mr-2">•</span> */}
                             {point}

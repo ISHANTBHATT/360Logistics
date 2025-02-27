@@ -57,11 +57,11 @@ function NavbarDemo({ className }) {
         </MenuItem>
         <MenuItem
           setActive={setActive}
-          active={active}
+          active={null}
           item="Services"
           href="/services"
         >
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="GROUND FREIGHT"
               href="https://algochurn.com"
@@ -86,7 +86,7 @@ function NavbarDemo({ className }) {
               src="/images/1.jpg"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-          </div>
+          </div> */}
         </MenuItem>
         <MenuItem
           setActive={setActive}

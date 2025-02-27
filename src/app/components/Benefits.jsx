@@ -76,11 +76,11 @@ function Benefits() {
           className="relative rounded-2xl overflow-hidden w-full h-full"
         >
           <img
-            src="images/delivery.jpg"
+            src="images/delivery2.jpeg"
             alt="Benefits"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
         </motion.div>
 
         <motion.div

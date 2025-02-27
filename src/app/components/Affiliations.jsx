@@ -8,9 +8,9 @@ function Affiliations() {
     "/images/client1.png",
     "/images/client2.png",
     "/images/client3.png",
-    "/images/client8.png",
-    "/images/client1.png",
-    "/images/client2.png",
+    "/images/client4.png",
+    "/images/client5.png",
+    "/images/client6.png",
   ];
   return (
     <div className="relative bg-gradient-to-b from-gray-50 to-gray-100">
@@ -83,7 +83,7 @@ function Affiliations() {
               <img
                 src={logo || "/placeholder.svg"}
                 alt="Partner Logo"
-                className="h-16 w-auto object-contain "
+                className="h-28 w-auto object-contain "
               />
             </motion.div>
           ))}

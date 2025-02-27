@@ -79,7 +79,7 @@ function Map() {
           </motion.div>
         </div>
       </motion.div>
-      <div className="w-full h-full relative">
+      <div className="w-full h-[650px] relative">
         <motion.video
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
