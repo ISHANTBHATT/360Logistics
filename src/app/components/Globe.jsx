@@ -668,13 +668,14 @@ export function Globe() {
         <div className="absolute w-full -bottom-20 h-72 md:h-full z-10 flex mb-20">
           <div className="w-full h-full flex flex-col justify-center items-center text-center">
             <h2 className="text-left text-xl md:text-4xl font-bold text-white">
-              Moving Beyond Boundaries
+              Round The Clock – Around the Globe
             </h2>
-            <p className="text-left text-base md:text-lg font-normal text-neutral-200 max-w-md mt-2 mx-auto">
-              360 Logistics is your trusted partner in seamless, efficient, and
-              reliable global logistics solutions. From warehousing to
-              transportation, we deliver innovation and precision at every step,
-              ensuring your goods move faster and smarter, worldwide.
+            <p className="text-left text-base md:text-lg font-normal text-neutral-200 max-w-2xl mt-2 mx-auto">
+              At Three Sixty Logistics Pvt Ltd we understand the complexities of
+              managing supply chains and distribution networks in today's
+              fastpaced business environment. Our comprehensive solutions are
+              designed to help you streamline operations, optimize costs, and
+              meet the ever-changing demands of your customers.
             </p>
           </div>
           <World data={sampleArcs} globeConfig={globeConfig} />

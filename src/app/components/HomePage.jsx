@@ -7,6 +7,10 @@ import ServicesGrid from "./ServicesGrid";
 import Experience from "./Experience";
 import Map from "./Map";
 import { Testimonials } from "./Testimonials";
+import Success from "./Success";
+import Benefits from "./Benefits";
+import Affiliations from "./Affiliations";
+import CompanyLogosCircle from "./GroupCompanies";
 
 function HomePage() {
   return (
@@ -14,10 +18,15 @@ function HomePage() {
       <Globe />
       <Card />
       <ServicesGrid />
-      <Experience />
-      <Services />
+      <Affiliations />
+      {/* <Experience /> */}
+      <CompanyLogosCircle />
+      {/* <Services /> */}
+      <Success />
+      <Benefits />
       <Map />
-      <Testimonials />
+
+      {/* <Testimonials /> */}
     </div>
   );
 }

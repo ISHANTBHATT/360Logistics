@@ -4,7 +4,46 @@ import { motion } from "motion/react";
 
 function Map() {
   return (
-    <>
+    <div className="relative">
+      {/* <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full pb-12 px-4 bg-white"
+      >
+        <div className="max-w-7xl mx-auto relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
+              REGISTER
+            </span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="relative z-10"
+          >
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
+              REGISTRATION STEPS
+            </h1>
+          </motion.div>
+        </div>
+      </motion.div> */}
+      <div
+        className="absolute -top-24 left-0 right-0 h-48 bg-white"
+        style={{
+          borderTopLeftRadius: "100% 200px",
+          borderTopRightRadius: "100% 200px",
+        }}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -22,7 +61,7 @@ function Map() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <span className="text-[80px] md:text-[100px] font-black text-gray-100 select-none">
-              REGISTER
+              OUR PRESENCE
             </span>
           </motion.div>
 
@@ -35,12 +74,26 @@ function Map() {
             className="relative z-10"
           >
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
-              REGISTRATION STEPS
+              PRESENCE
             </h1>
           </motion.div>
         </div>
       </motion.div>
-      <div className=" py-40 bg-white w-full">
+      <div className="w-full h-full relative">
+        <motion.video
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          autoPlay
+          loop
+          muted
+          className=" w-full h-full  z-0 "
+        >
+          <source src="videos/Presence.mp4" type="video/mp4" />
+        </motion.video>
+      </div>
+
+      {/* <div className=" py-40 bg-white w-full">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
             Remote{" "}
@@ -98,8 +151,8 @@ function Map() {
             },
           ]}
         />
-      </div>
-    </>
+      </div> */}
+    </div>
   );
 }
 export default Map;

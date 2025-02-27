@@ -359,33 +359,86 @@ function CardCarousel() {
 
   const cards = [
     {
-      title: "ORDER AND SHIP INTERNATIONALLY",
-      description:
-        "Curabitur congue finibus lorem, ut dignissim metus elementum sit amet. Mauris eget dapibus quam.",
+      title: "Freight Forwarding (AIR & OCEAN )",
+      description: [
+        "● Air Freight: Fast and reliable air transport solutions for time-sensitive shipments.",
+        "●	Ocean Freight: Cost-effective sea freight services, including FCL (Full Container Load) and LCL (Less than Container Load) options. ",
+        "●	Land Freight: Flexible road and rail transport for domestic and cross-border deliveries. ",
+      ],
       image: "/images/1.jpg",
       icon: Ship,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
     {
-      title: "AIR FREIGHT SERVICES",
-      description:
-        "Express delivery worldwide with our premium air freight services. Fast, reliable, and secure shipping solutions.",
+      title: "Supply Chain Management",
+      description: [
+        "●	End-to-End Solutions: Comprehensive management of supply chain processes to ensure efficiency and cost-effectiveness.",
+        "●	Vendor Management: Coordinating with suppliers and stakeholders to maintain a smooth flow of goods.",
+        "●	Demand Planning: Forecasting and aligning supply with market demands to prevent shortages or excess inventory.",
+      ],
       image: "/images/3.jpg",
       icon: Plane,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
     {
-      title: "PACKAGE DELIVERY",
-      description:
-        "Reliable package delivery services for all your shipping needs. Fast and secure delivery guaranteed.",
+      title: "E-Commerce Logistics (Cross Boarder )",
+      description: [
+        "●	Fulfilment Services: Picking, packing, and shipping e-commerce orders quickly and accurately.",
+        "●	Returns Management: Streamlined reverse logistics for hassle-free returns and exchanges.",
+        "●	Integration with Platforms: Seamless integration with e-commerce platforms like Shopify, Amazon, and WooCommerce.",
+      ],
       image: "/images/2.jpg",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
     },
     {
-      title: "CUSTOM LOGISTICS",
-      description:
-        "Tailored logistics solutions to meet your unique business needs. Efficient and cost-effective supply chain management.",
+      title: "3PL (Third-Party Logistics) Services",
+      description: [
+        "●	Outsourced Logistics: Managing warehousing, transportation, and distribution on behalf of businesses.",
+        "●	Integrated Solutions: Customizable services tailored to specific supply chain needs.",
+        "●	Cost Optimization: Reducing operational expenses through efficient logistics strategies.",
+      ],
+      image: "/images/3.jpg",
+      icon: Package,
+      gradient: "from-[#5db5e9] to-[#5db5e9]",
+    },
+    {
+      title: "Project Cargo Logistics",
+      description: [
+        "●	Oversized and Heavy-Lift Cargo: Specialized handling for large, heavy, or complex shipments.",
+        "●	End-to-End Execution: From site inspection to delivery, ensuring compliance and safety.",
+      ],
+      image: "/images/3.jpg",
+      icon: Package,
+      gradient: "from-[#5db5e9] to-[#5db5e9]",
+    },
+    {
+      title: "Temperature-Controlled Logistics",
+      description: [
+        "●	Cold Chain Solutions: Transport and storage for perishable goods like food, pharmaceuticals, and chemicals.",
+      ],
+      image: "/images/3.jpg",
+      icon: Package,
+      gradient: "from-[#5db5e9] to-[#5db5e9]",
+    },
+    {
+      title: "Specialized Services",
+      description: [
+        "●	Dangerous Goods Handling",
+        "●	Time-Critical Deliveries",
+        "●	Priority solutions for urgent and high-value & jewellery shipments ",
+      ],
+      image: "/images/3.jpg",
+      icon: Package,
+      gradient: "from-[#5db5e9] to-[#5db5e9]",
+    },
+    {
+      title: "Domestic Logistics Service Offerings",
+      description: [
+        "●	Airfreight – Cost-effective & efficient delivery network to cater any demand anytime – secure space with all prime carriers",
+        "●	Road Transportation -  Full Truckload (FTL)/ Less Than Truckload (LTL ) / Express Delivery ",
+        "●	Rail Freight Services – Bulk Cargo – Ideal for transporting large volumes in cost effective solution, schedule services ",
+      ],
       image: "/images/3.jpg",
       icon: Package,
       gradient: "from-[#5db5e9] to-[#5db5e9]",
@@ -473,12 +526,12 @@ function CardCarousel() {
               return (
                 <Card
                   key={index}
-                  className={`absolute duration-500 cursor-pointer overflow-hidden w-full max-w-2xl ${getCardStyle(
+                  className={`absolute duration-500 cursor-pointer overflow-hidden w-full max-w-2xl  ${getCardStyle(
                     index
                   )}`}
                   onClick={() => handleCardClick(index)}
                 >
-                  <div className="grid grid-cols-2 h-full">
+                  <div className="grid grid-cols-2 h-full ">
                     {/* Image Section */}
                     <div className="relative h-full">
                       <Image
@@ -494,9 +547,20 @@ function CardCarousel() {
                     <div
                       className={`bg-gradient-to-r ${card.gradient} p-8 flex flex-col justify-center text-white`}
                     >
-                      <h2 className="text-3xl font-bold mb-4">{card.title}</h2>
-                      <p className="mb-6 text-white/90">{card.description}</p>
-                      <button className="self-start py-3 px-8 border-2 rounded-full text-white border-white hover:bg-white/10">
+                      <h2 className="text-2xl font-bold mb-4">{card.title}</h2>
+                      <div className="mb-6 space-y-2 ">
+                        {card.description.map((point, index) => (
+                          <p
+                            key={index}
+                            className="text-white/90 flex items-center text-xs"
+                          >
+                            {/* <span className="mr-2">•</span> */}
+                            {point}
+                          </p>
+                        ))}
+                      </div>
+                      {/* <p className="mb-6 text-white/90">{card.description}</p> */}
+                      <button className="self-start py-2 px-4 text-sm border-2 rounded-full text-white border-white hover:bg-white/10">
                         SEE MORE
                       </button>
                     </div>
