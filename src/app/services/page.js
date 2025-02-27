@@ -412,12 +412,11 @@ function Page() {
               className="flex flex-col justify-center gap-4 w-1/2"
             >
               <h1 className="text-white text-4xl font-bold">
-                Get Insurance Policy and Save 20%!
+                Diverse & Reliable Services
               </h1>
               <p className="text-white/60 text-xl font-bold">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry and uses Latin words combined with a handful of model
-                words.
+                We offer a comprehensive range of logistics services tailored to
+                meet the unique needs of each client.
               </p>
             </motion.div>
             <motion.div

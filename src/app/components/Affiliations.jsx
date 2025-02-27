@@ -52,8 +52,8 @@ function Affiliations() {
             <div className="text-center mb-16 ">
               <h1 className="text-4xl font-bold mb-2">
                 <span className="text-gray-800">OUR</span>{" "}
-                <span className="text-[#5db5e9]">IMPRESSIVE</span>{" "}
-                <span className="text-gray-800">MEMBERS</span>
+                <span className="text-[#5db5e9]">ASSOCIATIONS</span>{" "}
+                {/* <span className="text-gray-800">MEMBERS</span> */}
               </h1>
             </div>
           </motion.div>
