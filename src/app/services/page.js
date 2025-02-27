@@ -293,57 +293,78 @@ function Page() {
     {
       title: "Freight Forwarding (AIR & OCEAN )",
       image: "/images/4.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "● Air Freight: Fast and reliable air transport solutions for time-sensitive shipments.",
+        "●	Ocean Freight: Cost-effective sea freight services, including FCL (Full Container Load) and LCL (Less than Container Load) options. ",
+        "●	Land Freight: Flexible road and rail transport for domestic and cross-border deliveries. ",
+      ],
       icon: TramFront,
     },
     {
       title: "Supply Chain Management",
       image: "/images/5.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	End-to-End Solutions: Comprehensive management of supply chain processes to ensure efficiency and cost-effectiveness.",
+        "●	Vendor Management: Coordinating with suppliers and stakeholders to maintain a smooth flow of goods.",
+        "●	Demand Planning: Forecasting and aligning supply with market demands to prevent shortages or excess inventory.",
+      ],
       icon: PlaneTakeoff,
     },
     {
       title: "E-Commerce Logistics (Cross Boarder )",
       image: "/images/6.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Fulfilment Services: Picking, packing, and shipping e-commerce orders quickly and accurately.",
+        "●	Returns Management: Streamlined reverse logistics for hassle-free returns and exchanges.",
+        "●	Integration with Platforms: Seamless integration with e-commerce platforms like Shopify, Amazon, and WooCommerce.",
+      ],
       icon: Ship,
     },
     {
       title: "3PL (Third-Party Logistics) Services",
       image: "/images/7.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Outsourced Logistics: Managing warehousing, transportation, and distribution on behalf of businesses.",
+        "●	Integrated Solutions: Customizable services tailored to specific supply chain needs.",
+        "●	Cost Optimization: Reducing operational expenses through efficient logistics strategies.",
+      ],
       icon: TramFront,
     },
     {
       title: "Project Cargo Logistics",
       image: "/images/8.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Oversized and Heavy-Lift Cargo: Specialized handling for large, heavy, or complex shipments.",
+        "●	End-to-End Execution: From site inspection to delivery, ensuring compliance and safety.",
+      ],
       icon: TramFront,
     },
     {
       title: "Temperature-Controlled Logistics",
       image: "/images/9.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Cold Chain Solutions: Transport and storage for perishable goods like food, pharmaceuticals, and chemicals.",
+      ],
       icon: TramFront,
     },
     {
       title: "Specialized Services",
       image: "/images/10.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Dangerous Goods Handling",
+        "●	Time-Critical Deliveries",
+        "●	Priority solutions for urgent and high-value & jewellery shipments ",
+      ],
       icon: TramFront,
     },
     {
       title: "Domestic Logistics Service Offerings",
       image: "/images/11.png",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation commodo consequat.",
+      description: [
+        "●	Airfreight – Cost-effective & efficient delivery network to cater any demand anytime – secure space with all prime carriers",
+        "●	Road Transportation -  Full Truckload (FTL)/ Less Than Truckload (LTL ) / Express Delivery ",
+        "●	Rail Freight Services – Bulk Cargo – Ideal for transporting large volumes in cost effective solution, schedule services ",
+      ],
       icon: TramFront,
     },
   ];
@@ -472,7 +493,18 @@ function Page() {
                 <h1 className="text-4xl font-bold text-[#142752]">
                   {service.title}
                 </h1>
-                <h1 className="text-xl text-black/50">{service.description}</h1>
+                {/* <h1 className="text-xl text-black/50">{service.description}</h1> */}
+                <div className="mb-6 space-y-2 ">
+                  {service.description.map((point, index) => (
+                    <p
+                      key={index}
+                      className="text-xl text-black/50 flex items-center"
+                    >
+                      {/* <span className="mr-2">•</span> */}
+                      {point}
+                    </p>
+                  ))}
+                </div>
               </motion.div>
             </motion.div>
           ))}
