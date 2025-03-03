@@ -36,7 +36,7 @@ export default function Page() {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p> */}
-          <div className="flex flex-col gap-4 py-10 text-[#515151]">
+          <div className="flex flex-col gap-4 py-10 text-[#515151]/80">
             <div className="flex gap-4">
               <Phone className="w-6 h-6" />
               <p className="text-lg font-bold">

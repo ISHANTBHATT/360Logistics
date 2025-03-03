@@ -507,7 +507,8 @@ function CardCarousel() {
             className="relative z-10"
           >
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 text-center">
-              OUR SERVICES
+              OUR
+              <span className="text-[#5db5e9]"> SERVICES</span>
             </h1>
           </motion.div>
         </div>

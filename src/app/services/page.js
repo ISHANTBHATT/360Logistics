@@ -395,8 +395,8 @@ function Page() {
           </svg>
         </div>
         {/* Content Container */}
-        <div className="relative h-[90vh] bg-gradient-to-r from-blue-700 to-cyan-400 flex items-center justify-center">
-          <div className="flex px-20 overflow-hidden">
+        <div className="relative h-[90vh] bg-gradient-to-r from-[#5db5e9] to-cyan-400 flex items-center justify-center">
+          <div className="flex flex-col md:flex-row px-4 lg:px-20 overflow-hidden">
             <motion.div
               initial={{
                 opacity: 0,
@@ -411,7 +411,7 @@ function Page() {
               }}
               className="flex flex-col justify-center gap-4 w-1/2"
             >
-              <h1 className="text-white text-4xl font-bold">
+              <h1 className="text-white text-5xl font-bold">
                 Diverse & Reliable Services
               </h1>
               <p className="text-white/60 text-xl font-bold">

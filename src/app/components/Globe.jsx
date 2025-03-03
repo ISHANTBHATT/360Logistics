@@ -244,6 +244,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const World = dynamic(
   () => import("@/components/ui/globe").then((m) => m.World),
@@ -262,7 +263,7 @@ export function Globe() {
     emissive: "#062056",
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    polygonColor: "#9dc832",
+    polygonColor: "#ffffff",
     ambientLight: "#38bdf8",
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
@@ -640,7 +641,21 @@ export function Globe() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto bg-[#2C276A]  relative w-full">
+    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto bg-[#5db5e9]  relative w-full">
+      <div className="w-80 h-80 top-10 left-10 absolute">
+        <DotLottieReact
+          src="https://lottie.host/cd3be586-cebe-4e69-8051-05882e303959/KzSn1EunY6.lottie"
+          loop
+          autoplay
+        />
+      </div>
+      {/* <div className="w-80 h-80 bottom-24 right-1/2 absolute">
+        <DotLottieReact
+          src="https://lottie.host/b658cc58-4cd2-4b05-ac44-394e7527fd99/XXjG4HUaZS.lottie"
+          loop
+          autoplay
+        />
+      </div> */}
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
@@ -664,10 +679,11 @@ export function Globe() {
             don&apos;t forget to share it. :)
           </p> */}
         </motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-[#2C276A]  z-40" />
+        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-[#5db5e9]  z-40" />
+
         <div className="absolute w-full -bottom-20 h-72 md:h-full z-10 flex mb-20">
           <div className="w-full h-full flex flex-col justify-center items-center text-center">
-            <h2 className="text-left text-xl md:text-4xl font-bold text-white">
+            <h2 className="text-left text-xl md:text-5xl font-bold text-white">
               Round The Clock – Around the Globe
             </h2>
             <p className="text-left text-base md:text-lg font-normal text-neutral-200 max-w-2xl mt-2 mx-auto">
