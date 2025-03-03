@@ -302,7 +302,7 @@ function Page() {
     },
     {
       title: "Supply Chain Management",
-      image: "/images/5.png",
+      image: "/images/5.jpeg",
       description: [
         "●	End-to-End Solutions: Comprehensive management of supply chain processes to ensure efficiency and cost-effectiveness.",
         "●	Vendor Management: Coordinating with suppliers and stakeholders to maintain a smooth flow of goods.",
